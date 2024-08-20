@@ -34,8 +34,7 @@ window.addEventListener('resize', (event) => {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 window.addEventListener('dblclick', () => {
-    const fullscreen = document.fullscreenElement
-    if (!fullscreen) {
+    if (!document.fullscreenElement) {
         canvas.requestFullscreen()
     } else {
         document.exitFullscreen()
