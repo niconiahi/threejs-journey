@@ -1,0 +1,15 @@
+{
+  "name": "threejs-journey",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "pnpm --recursive run lint",
+    "lint:fix": "pnpm --recursive run lint:fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.26.0",
+    "eslint-plugin-format": "^0.1.2",
+    "typescript": "^5.5.4"
+  }
+}
