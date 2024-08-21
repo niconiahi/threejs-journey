@@ -94,6 +94,12 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
+window.addEventListener("keydown", (event) => {
+  if (event.key === "h") {
+    gui.show(gui._hidden)
+  }
+})
+
 window.addEventListener("resize", () => {
   // Update sizes
   sizes.width = window.innerWidth
@@ -111,10 +117,10 @@ window.addEventListener("resize", () => {
 /**
  * Animate
  */
-const clock = new THREE.Clock()
+// const clock = new THREE.Clock()
 
 function tick() {
-  const elapsedTime = clock.getElapsedTime()
+  // const elapsedTime = clock.getElapsedTime()
 
   // Update controls
   controls.update()
