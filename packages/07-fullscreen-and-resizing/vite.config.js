@@ -1,4 +1,4 @@
-import { process } from "node:process"
+import process from "node:process"
 
 import restart from "vite-plugin-restart"
 
