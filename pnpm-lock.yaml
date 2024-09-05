@@ -163,6 +163,22 @@ importers:
         specifier: ^0.4.1
         version: 0.4.1(vite@5.4.2)
 
+  packages/14-lights:
+    dependencies:
+      lil-gui:
+        specifier: ^0.19.2
+        version: 0.19.2
+      three:
+        specifier: ^0.166.1
+        version: 0.166.1
+    devDependencies:
+      vite:
+        specifier: ^5.3.3
+        version: 5.4.2
+      vite-plugin-restart:
+        specifier: ^0.4.1
+        version: 0.4.1(vite@5.4.2)
+
 packages:
 
   '@antfu/eslint-config@2.26.0':
